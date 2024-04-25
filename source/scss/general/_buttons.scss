@@ -1,0 +1,60 @@
+.main-btn {
+  width: 262px;
+  height: 60px;
+  background-color: rgba(var(--bg-c),1.0);
+  font-family: var(--font-family2);
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: 700;
+  color: rgba(var(--cl-c),1.0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .4s;
+}
+
+.green-btn{
+  background-color: rgba(var(--bg-d),1.0);
+  width: 262px;
+  height: 60px;
+  font-family: var(--font-family2);
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: 700;
+  color: rgba(var(--cl-c),1.0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-gap: clamp(10px, 1.1404vw, 13px);
+  transition: all .4s;
+}
+.blue-btn{
+  background-color: rgba(var(--bg-e),1.0);
+  width: 262px;
+  height: 60px;
+  font-family: var(--font-family2);
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: 700;
+  color: rgba(var(--cl-c),1.0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-gap: clamp(10px, 1.1404vw, 13px);
+  transition: all .4s;
+}
+
+.white-btn{
+  font-family: var(--font-family2);
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: 700;
+  color: rgba(var(--cl-d),1.0);
+  width: 262px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .4s;
+  background-color: rgba(var(--bg-a),1.0);
+}

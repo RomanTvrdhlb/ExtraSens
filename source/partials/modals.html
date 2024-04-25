@@ -1,0 +1,411 @@
+<div class="overlay fixed-block" data-overlay>
+
+  <div class="modal" data-popup="access">
+    <button class="modal__close close" aria-label="Закрыть модальное окно">
+      <svg width="18" height="18">
+        <use href="img/sprite/sprite.svg#close"></use>
+      </svg>
+    </button>
+
+    <div class="modal__box">
+      <span class="modal__title title">Получить доступ<br> 
+        к закрытым продажам</span>
+
+        <form class="modal__wrapp  form-validation">
+          <input type="hidden" name="offer" value="lock_sales">
+          <div class="main-form">
+              <label for="name" class="main-form__label">
+                  <span class="main-form__subtitle">Ваше имя</span>
+                  <input type="text" id="name" name="name" class="main-form__input input-name" placeholder="Имя...">
+              </label>
+              <label for="phone" class="main-form__label">
+                <span class="main-form__subtitle">Телефон</span>
+                <input type="tel" id="phone" class="main-form__input input-phone" placeholder="+380...">
+              </label>
+              <div class="main-form__label main-form__label--mode">
+                <span class="main-form__subtitle">Мессенжер для связи</span>
+                <span class="main-form__subtitle main-form__subtitle--mode">Мессенжер</span>
+                <div class="select" data-select>
+                  <div class="select__header">
+                    <input type="hidden" class="select__input input-select" name="mess" value="1">
+                    <span class="select__current" data-id="1">
+                      <svg width='21' height='20'>
+                        <use href='img/sprite/sprite.svg#whatsapp'></use>
+                      </svg>
+                      Whatsapp
+                      </span>
+                    <svg class="select__current-icon" width='15' height='7'>
+                      <use href='img/sprite/sprite.svg#triangle'></use>
+                    </svg>
+                  </div>
+                  <div class="select__body">
+                    <ul class="select__list">
+                      <li class="select__option" data-id="1" data-type="option">
+                        <svg width='22' height='24'>
+                          <use href='img/sprite/sprite.svg#whatsapp'></use>
+                        </svg>
+                        Whatsapp
+                      </li>
+                      <li class="select__option" data-id="2" data-type="option">
+                        <svg width='21' height='20'>
+                          <use href='img/sprite/sprite.svg#tg'></use>
+                        </svg>
+                        Телеграм
+                      </li>
+                      <li class="select__option" data-id="3" data-type="option">
+                        <svg width='22' height='24'>
+                          <use href='img/sprite/sprite.svg#viber2'></use>
+                        </svg>
+                        Viber
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          <button class="main-btn submit main-btn--blue">
+            Отправить
+          </button>
+        </form>
+    </div>
+  </div>
+
+  <div class="modal" data-popup="zoom">
+    <button class="modal__close close" aria-label="Закрыть модальное окно">
+      <svg width="18" height="18">
+        <use href="img/sprite/sprite.svg#close"></use>
+      </svg>
+    </button>
+
+    <div class="modal__box">
+      <span class="modal__title title">Записать на<br> 
+        Zoom-консультацию</span>
+
+        <form class="modal__wrapp form-validation">
+          <input type="hidden" name="offer" value="zoom">
+          <div class="main-form">
+              <label for="name2" class="main-form__label">
+                  <span class="main-form__subtitle">Ваше имя</span>
+                  <input type="text" id="name2" name="name" class="main-form__input input-name" placeholder="Имя...">
+              </label>
+              <label for="phone2" class="main-form__label">
+                <span class="main-form__subtitle">Телефон</span>
+                <input type="tel" id="phone2" class="main-form__input input-phone" placeholder="+380...">
+              </label>
+              <div class="main-form__label main-form__label--mode">
+                <span class="main-form__subtitle">Мессенжер для связи</span>
+                <span class="main-form__subtitle main-form__subtitle--mode">Мессенжер</span>
+                
+                <div class="select" data-select>
+                  <div class="select__header">
+                    <input type="hidden" class="select__input input-select" name="mess" value="1">
+                    <span class="select__current" data-id="1">
+                      <svg width='21' height='20'>
+                        <use href='img/sprite/sprite.svg#whatsapp'></use>
+                      </svg>
+                      Whatsapp
+                      </span>
+                    <svg class="select__current-icon" width='15' height='7'>
+                      <use href='img/sprite/sprite.svg#triangle'></use>
+                    </svg>
+                  </div>
+                  <div class="select__body">
+                    <ul class="select__list">
+                      <li class="select__option" data-id="1" data-type="option">
+                        <svg width='22' height='24'>
+                          <use href='img/sprite/sprite.svg#whatsapp'></use>
+                        </svg>
+                        Whatsapp
+                      </li>
+                      <li class="select__option" data-id="2" data-type="option">
+                        <svg width='21' height='20'>
+                          <use href='img/sprite/sprite.svg#tg'></use>
+                        </svg>
+                        Телеграм
+                      </li>
+                      <li class="select__option" data-id="3" data-type="option">
+                        <svg width='22' height='24'>
+                          <use href='img/sprite/sprite.svg#viber2'></use>
+                        </svg>
+                        Viber
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+          
+          </div>
+
+          <button class="main-btn submit main-btn--blue">
+            Отправить
+          </button>
+        </form>
+    </div>
+  </div>
+
+  <div class="modal" data-popup="sign">
+    <button class="modal__close close" aria-label="Закрыть модальное окно">
+      <svg width="18" height="18">
+        <use href="img/sprite/sprite.svg#close"></use>
+      </svg>
+    </button>
+
+    <div class="modal__box">
+      <span class="modal__title title">Записаться<br class="mob"> на<br class="mode">
+        бесплатный<br> 
+        ознакомительный тур</span>
+
+        <form class="modal__wrapp form-validation">
+          <input type="hidden" name="offer" value="intro_tour">
+          <div class="main-form">
+              <label for="name3" class="main-form__label">
+                  <span class="main-form__subtitle">Ваше имя</span>
+                  <input type="text" id="name3" name="name" class="main-form__input input-name" placeholder="Имя...">
+              </label>
+              <label for="phone3" class="main-form__label">
+                <span class="main-form__subtitle">Телефон</span>
+                <input type="tel" id="phone3" class="main-form__input input-phone" placeholder="+380...">
+              </label>
+              <div class="main-form__label main-form__label--mode">
+                <span class="main-form__subtitle">Мессенжер для связи</span>
+                <span class="main-form__subtitle main-form__subtitle--mode">Мессенжер</span>
+                
+                <div class="select" data-select>
+                  <div class="select__header">
+                    <input type="hidden" class="select__input input-select" name="mess" value="1">
+                    <span class="select__current" data-id="1">
+                      <svg width='21' height='20'>
+                        <use href='img/sprite/sprite.svg#whatsapp'></use>
+                      </svg>
+                      Whatsapp
+                      </span>
+                    <svg class="select__current-icon" width='15' height='7'>
+                      <use href='img/sprite/sprite.svg#triangle'></use>
+                    </svg>
+                  </div>
+                  <div class="select__body">
+                    <ul class="select__list">
+                      <li class="select__option" data-id="1" data-type="option">
+                        <svg width='22' height='24'>
+                          <use href='img/sprite/sprite.svg#whatsapp'></use>
+                        </svg>
+                        Whatsapp
+                      </li>
+                      <li class="select__option" data-id="2" data-type="option">
+                        <svg width='21' height='20'>
+                          <use href='img/sprite/sprite.svg#tg'></use>
+                        </svg>
+                        Телеграм
+                      </li>
+                      <li class="select__option" data-id="3" data-type="option">
+                        <svg width='22' height='24'>
+                          <use href='img/sprite/sprite.svg#viber2'></use>
+                        </svg>
+                        Viber
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+          
+          </div>
+
+          <button class="main-btn submit main-btn--blue">
+            Отправить
+          </button>
+        </form>
+    </div>
+  </div>
+
+  <div class="modal" data-popup="consultation">
+    <button class="modal__close close" aria-label="Закрыть модальное окно">
+      <svg width="18" height="18">
+        <use href="img/sprite/sprite.svg#close"></use>
+      </svg>
+    </button>
+
+    <div class="modal__box">
+      <span class="modal__title modal__title--mode title">Получить консультацию<br> 
+        и забронировать 
+        <span class="modal__title-name">1+1 в комплексе</span>
+        </span>
+
+        <form class="modal__wrapp form-validation">
+          <div class="main-form">
+              <label for="name4" class="main-form__label">
+                  <span class="main-form__subtitle">Ваше имя</span>
+                  <input type="text" id="name4" name="name" class="main-form__input input-name" placeholder="Имя...">
+              </label>
+              <label for="phone4" class="main-form__label">
+                <span class="main-form__subtitle">Телефон</span>
+                <input type="tel" id="phone4" class="main-form__input input-phone" placeholder="+380...">
+              </label>
+              <div class="main-form__label main-form__label--mode">
+                <span class="main-form__subtitle">Мессенжер для связи</span>
+                <span class="main-form__subtitle main-form__subtitle--mode">Мессенжер</span>
+                
+                <div class="select" data-select>
+                  <div class="select__header">
+                    <input type="hidden" class="select__input input-select" name="mess" value="1">
+                    <span class="select__current" data-id="1">
+                      <svg width='21' height='20'>
+                        <use href='img/sprite/sprite.svg#whatsapp'></use>
+                      </svg>
+                      Whatsapp
+                      </span>
+                    <svg class="select__current-icon" width='15' height='7'>
+                      <use href='img/sprite/sprite.svg#triangle'></use>
+                    </svg>
+                  </div>
+                  <div class="select__body">
+                    <ul class="select__list">
+                      <li class="select__option" data-id="1" data-type="option">
+                        <svg width='22' height='24'>
+                          <use href='img/sprite/sprite.svg#whatsapp'></use>
+                        </svg>
+                        Whatsapp
+                      </li>
+                      <li class="select__option" data-id="2" data-type="option">
+                        <svg width='21' height='20'>
+                          <use href='img/sprite/sprite.svg#tg'></use>
+                        </svg>
+                        Телеграм
+                      </li>
+                      <li class="select__option" data-id="3" data-type="option">
+                        <svg width='22' height='24'>
+                          <use href='img/sprite/sprite.svg#viber2'></use>
+                        </svg>
+                        Viber
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+          
+          </div>
+
+          <button class="main-btn submit main-btn--blue">
+            Отправить
+          </button>
+        </form>
+    </div>
+  </div>
+
+  <div class="modal contact" data-popup="contact">
+    <button class="modal__close close" aria-label="Закрыть модальное окно">
+      <svg width="18" height="18">
+        <use href="img/sprite/sprite.svg#close"></use>
+      </svg>
+    </button>
+
+    <div class="modal__content">
+    <div class="modal__box">
+      <span class="modal__title title">Контакты</span>
+
+      <ul class="contacts">
+        <li>
+          <a href="tel:+905338353003">
+            <svg width='69' height='69'>
+              <use href='img/sprite/sprite.svg#geo2'></use>
+            </svg>
+            <span>dükkan no:4, 43 i̇sti̇klal caddesi̇ yeni̇boğazi̇çi̇ gazi̇mağusa</span>
+          </a>
+        </li>
+        <li>
+          <a href="tel:+905338353003">
+            <svg width='69' height='69'>
+              <use href='img/sprite/sprite.svg#phone2'></use>
+            </svg>
+            <span>+905 33 83 530 03</span>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:info@cypruslife.estate">
+            <svg width='69' height='69'>
+              <use href='img/sprite/sprite.svg#main'></use>
+            </svg>
+            <span>info@cypruslife.estate</span>
+          </a>
+        </li>
+      </ul>
+      <div class="socials">
+        <ul>
+          <li>
+            <a href="#">
+              <svg width='69' height='69'>
+                <use href='img/sprite/sprite.svg#fb'></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg width='69' height='69'>
+                <use href='img/sprite/sprite.svg#inst'></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg width='69' height='69'>
+                <use href='img/sprite/sprite.svg#tg2'></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg width='69' height='69'>
+                <use href='img/sprite/sprite.svg#what'></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg width='69' height='69'>
+                <use href='img/sprite/sprite.svg#youtube'></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <form class="modal__wrapp form-validation">
+        <input type="hidden" name="form_name" value="Контакты">
+        <input type="hidden" name="offer" value="feedback">
+        <div class="main-form">
+            <label for="name5" class="main-form__label">
+                <span class="main-form__subtitle">Ваше имя</span>
+                <input type="text" id="name5" name="name" class="main-form__input input-name" placeholder="Имя...">
+            </label>
+            <label for="phone5" class="main-form__label">
+              <span class="main-form__subtitle">Телефон</span>
+              <input type="tel" id="phone5" class="main-form__input input-phone">
+            </label>
+        </div>
+
+        <button class="main-btn submit main-btn--blue">
+          Заказать звонок
+        </button>
+      </form>
+    </div>
+
+    <div class="modal__image">
+      <picture>
+        <source type='image/webp' srcset='img/index/contact.webp'>
+        <img width='558' height='698' src='img/index/contact.png' alt='image'>
+      </picture>
+    </div>
+  </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+

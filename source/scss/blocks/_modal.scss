@@ -1,0 +1,289 @@
+.modal {
+    background: rgba(var(--bg-a),1.0);
+    max-width: 762px;
+    width: 90vw;
+    padding: 43px clamp(20px, 3.0612vw, 42px) clamp(31px, 3.4985vw, 48px);
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 10px -16px 34px 0 rgba(0, 0, 0, 0.25);
+
+
+
+    &__box{
+      display: flex;
+      flex-direction: column;
+      grid-gap: 29px;
+      width: 100%;
+    }
+
+    &__wrapp{
+        display: flex;
+        flex-direction: column;
+        grid-gap: 29px;
+        width: 100%;
+    }
+
+    &__title{
+      margin-bottom: 15px;
+      font-size: clamp(20px, 2.1866vw, 30px);
+
+      br{
+        &.mode{
+          @include mobile{
+            display: none;
+          }
+        }
+        &.mob{
+          @include for-mobile{
+            display: none;
+          }
+        }
+      }
+
+      &--mode{
+        @include for-tablet{
+          max-width: clamp(318px, 43.4686vw, 589px);
+        }
+
+        @include tablet{
+          @include for-small-tablet{
+            max-width: 70%;
+          }
+        }
+      }
+    }
+
+    .main-btn{
+      align-self: center;
+      width: 100%;
+      max-width: 366px;
+    }
+
+    &__close{
+      position: absolute;
+      top: 25px;
+      right: 26px;
+      transition: all .3s;
+      z-index: 25;
+
+      svg{
+        fill: none;
+      }
+
+    &:hover{
+      transform: scale(1.1);
+    }
+    }
+
+    &__content{
+      display: flex;
+      grid-gap: 34px clamp(20px, 3.1341vw, 43px);
+
+      @include small-tablet{
+        flex-direction: column;
+      }
+    }
+
+    &__image{
+      width: 100%;
+      flex-shrink: 0;
+
+      img,picture{
+        width: 100%;
+        height: 100%;
+      }
+
+      @include for-tablet{
+        max-width: Min(37.2vw, 558px);
+        max-height: Min(46.533vw, 698px);
+        height: 100%;
+      }
+      @include tablet{
+        @include for-small-tablet{
+        width: 206px;
+        height: 290px;
+        }
+      }
+
+      @include for-small-tablet{
+        margin-top: 13px;
+      }
+    }
+
+    &.contact{
+      padding: clamp(43px, 3.863vw, 53px) clamp(20px, 3.207vw, 44px) 50px;
+      max-width: 1366px;
+
+
+      .contacts{
+        padding-top: clamp(6px, 1.4577vw, 20px);
+        margin-bottom: 2px;
+        display: flex;
+        flex-direction: column;
+        grid-gap: clamp(20px, 2.551vw, 35px);
+
+        li{
+          &:first-child{
+            a{
+              svg{
+                transform: translateY(-20%);
+              }
+
+              &:hover{
+                svg{
+                    transform: scale(1.05) translateY(-20%);
+                }
+              }
+            }
+            
+            
+            
+          }
+        }
+
+        a{
+          font-size: clamp(18px, 1.8222vw, 25px);
+          position: relative;
+          padding-left: calc(clamp(40px, 5.0292vw, 69px) + 10px);
+          
+          @include for-mobile{
+            height: clamp(40px, 5.0292vw, 69px);
+          }
+        
+
+          @include for-small-tablet{
+            font-weight: 500;
+          }
+
+          @include small-tablet{
+            font-weight: 600;
+          }
+
+          svg{
+            flex-shrink: 0;
+            width: clamp(40px, 5.0292vw, 69px);
+            height: clamp(40px, 5.0292vw, 69px);
+            fill: none;
+            transition: all .2s;
+            position: absolute;
+            left: 0;
+
+            @include for-desktop{
+              transform: translateY(-35%);
+            }
+
+            @include desktop{
+              @include for-mobile{
+                transform: translateY(-30%);
+              }
+            }
+
+            @include mobile{
+              transform: translateY(-25%);
+            }
+          }
+
+          &:hover{
+            svg{
+              @include for-desktop{
+                transform: scale(1.05) translateY(-35%);
+              }
+  
+              @include desktop{
+                transform: scale(1.05) translateY(-30%);
+              }
+            }
+          }
+        }
+
+        @include small-tablet{
+          order: 2;
+          margin-bottom: 5px;
+        }
+      }
+
+      .socials{
+        ul{
+          grid-gap: clamp(19px, 1.5306vw, 21px);
+        }
+
+        a{
+          svg{
+            flex-shrink: 0;
+            width: clamp(40px, 5.0292vw, 69px);
+            height: clamp(40px, 5.0292vw, 69px);
+            transition: all .2s;
+          }
+
+          &:hover{
+            svg{
+              transform: scale(1.05);
+            }
+          }
+        }
+
+        @include small-tablet{
+          order: 3;
+        }
+      }
+
+      .main-form{
+        &__label{
+          &:last-child{
+            grid-column: initial;
+          }
+        }
+
+        @include for-small-tablet{
+          margin-top: 52px;
+        }
+
+        @include small-tablet{
+          order: 5;
+          margin-top: 24px;
+        }
+      }
+
+      .main-btn{
+        align-self: flex-start;
+
+        @include small-tablet{
+          order: 6;
+          margin-top: -13px;
+        }
+      }
+
+      .modal{
+
+        &__box{
+          grid-gap: 33px;
+
+          @include small-tablet{
+            display: contents;
+          }
+        }
+
+        &__image{
+          @include small-tablet{
+            order: 4;
+            height: 100%;
+            max-height: clamp(293px, 45.573vw, 350px);
+
+            img,picture{
+              object-position: bottom;
+            }
+          }
+        }
+
+        &__title{
+          margin: 0;
+
+          @include small-tablet{
+            order: 1;
+            margin-bottom: 4px;
+          }
+        }
+      }
+    }
+  }
+  

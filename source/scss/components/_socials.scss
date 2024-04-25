@@ -1,0 +1,18 @@
+.socials {
+  display: flex;
+  
+  @include for-tablet{
+    flex-direction: column;
+    grid-gap: 20px;
+  }
+  
+  @include tablet{
+    grid-gap: 24px;
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    grid-gap: 19px;
+  }
+}

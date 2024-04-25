@@ -1,0 +1,32 @@
+.offers-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: clamp(40px, 6.5789vw, 75px) clamp(20px, 3.0702vw, 35px);
+
+    &__item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-gap: 8px;
+    }
+
+    &__image{
+        margin-bottom: 14px;
+    }
+
+    &__title{
+        font-family: var(--font-family3);
+        font-size: clamp(18px, 2.1053vw, 24px);
+        line-height: 100%;
+        font-weight: 700;
+        color: rgba(var(--cl-e),1.0);
+    }
+
+    p{
+        font-family: var(--font-family3);
+        font-size: clamp(14px, 1.4035vw, 16px);
+        line-height: 1.2;
+        font-weight: 400;
+        color: rgba(var(--cl-e),1.0);
+    }
+}

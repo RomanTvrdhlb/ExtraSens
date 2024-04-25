@@ -1,0 +1,10 @@
+.main-btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 15px clamp(20px, 2.6316vw, 30px);
+
+    @include small-tablet{
+        flex-wrap: wrap;
+    }
+}

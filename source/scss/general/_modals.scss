@@ -1,0 +1,26 @@
+[data-btn-modal] {
+  svg {
+    pointer-events: none;
+  }
+}
+
+.modal {
+  margin: auto;
+  transform: scale(.8);
+  display: none;
+
+  &.active {
+    transform: scale(1);
+  }
+
+  .close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .close svg {
+    pointer-events: none;
+    transition: all .3s;
+  }
+}
