@@ -8,7 +8,13 @@
   }
 
   &__wrapper {
-    transition: all 0.6s;
+    @include for-mobile{
+      transition: all 0.6s;
+    }
+
+    @include mobile{
+      transition: all .1s;
+    }
   }
 
   &::before,
@@ -22,6 +28,10 @@
     color: rgba(var(--cl-k), 1);
     pointer-events: none;
     z-index: -1;
+
+    @include mobile{
+      display: none;
+    }
   }
 
   &::before {
@@ -43,10 +53,6 @@
     border-left: 8px solid var(--br-b);
     border-bottom: 8px solid var(--br-b);
     rotate: -135deg;
-    position: absolute;
-    bottom: 0;
-    right: 30%;
-    transform: translate(0%, 0%);
     z-index: 10;
     transition: all 0.3s;
 
@@ -54,10 +60,27 @@
       right: initial;
       left: 30%;
       rotate: 45deg;
+
+      @include mobile{
+        left: -20%;
+      }
     }
 
     &.swiper-button-disabled {
       border-color: var(--br-c);
+    }
+
+    @include for-mobile{
+      position: absolute;
+      bottom: 0;
+      right: 30%;
+      transform: translate(0%, 0%);
+    }
+
+    @include mobile{
+      position: relative;
+      margin-top: 37px;
+      right: -20%;
     }
   }
 }
@@ -73,8 +96,20 @@
         align-items: center;
         flex-direction: row-reverse;
         justify-content: center;
-        grid-gap: 500px;
         margin-top: 60px;
+
+        @include for-small-tablet{
+          grid-gap: 500px;
+        }
+
+        @include small-tablet{
+          padding: 0 30px;
+          justify-content: space-between;
+        }
+
+        @include mobile{
+          margin-top: 75px;
+        }
     }
 
     &__btn{
@@ -129,7 +164,7 @@
     }
 
     p {
-      font-size: 16px;
+      font-size: clamp(14px, 1.4035vw, 16px);
       color: rgba(var(--cl-a), 1);
       line-height: 1.2;
     }

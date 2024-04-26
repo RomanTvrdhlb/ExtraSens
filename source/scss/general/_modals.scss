@@ -19,7 +19,7 @@
     justify-content: center;
   }
 
-  .close svg {
+  .close svg, .close img{
     pointer-events: none;
     transition: all .3s;
   }

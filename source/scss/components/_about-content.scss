@@ -2,19 +2,31 @@
   &__text {
     display: flex;
     flex-direction: column;
-    grid-gap: 50px;
+    grid-gap: clamp(30px, 4.386vw, 50px);
+
+    @include small-tablet{
+      display: contents;
+    }
   }
 
   &__box{
     display: flex;
     flex-direction: column;
-    grid-gap: 92px;
+    grid-gap: clamp(66px, 8.0702vw, 92px);
   }
 
   &__inner {
     display: grid;
-    grid-template-columns: auto 1fr;
-    grid-gap: 30px;
+
+    @include for-small-tablet{
+      grid-gap: 30px;
+      grid-template-columns: auto 1fr;
+    }
+
+    @include small-tablet{
+      grid-gap: 20px 16px;
+      grid-template-columns: repeat(2, 1fr);
+    }
 
     .green-text {
       font-weight: 700;
@@ -22,10 +34,20 @@
 
     p {
       font-family: var(--font-family);
-      font-size: clamp(16px, 1.5789vw, 18px);
+      font-size: clamp(14px, 1.5789vw, 18px);
       line-height: 1.2;
       font-weight: 400;
       color: rgba(var(--cl-f), 1);
+
+      &:first-child{
+        @include small-tablet{
+          order: -1;
+        }
+      }
+
+      @include small-tablet{
+        grid-column: span 2;
+      }
     }
   }
 
@@ -34,20 +56,41 @@
     flex-direction: column;
     grid-gap: 22px;
     width: fit-content;
+
+    @include small-tablet{
+      display: contents;
+    }
   }
 
   &__image {
-    width: fit-content;
+
+    @include for-small-tablet{
+      width: Min(31.4912vw, 369px);
+    }
+
+    @include small-tablet{
+      display: flex;
+      margin-bottom: 6px;
+      width: 100%;
+    }
   }
 
   &__wrapp{
     display: flex;
     flex-direction: column;
-    grid-gap: 57px;
+    grid-gap: clamp(25px, 5vw, 57px);
     align-items: center;
     text-align: center;
     .main-btns{
-        margin-top: 23px;
+        @include for-mobile{
+          margin-top: 23px;
+        }
+    }
+  }
+
+  .main-slider{
+    @include small-tablet{
+      margin:10px 0 12px;
     }
   }
 }

@@ -1,5 +1,5 @@
 .about-section{
-    padding: 86px 0 163px;
+    padding: clamp(46px, 7.5439vw, 86px) 0 clamp(59px, 14.2982vw, 163px);
 
     &__box{
         display: flex;

@@ -1,18 +1,22 @@
 .title{
   font-family: var(--font-family);
-  font-size: clamp(42px, 5.7018vw, 65px);
+  font-size: clamp(20px, 5.7018vw, 65px);
   line-height: 37%;
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
 
+  @include small-tablet{
+    line-height: 120%;
+  }
+
   &--big{
-    font-size: clamp(48px, 6.5789vw, 75px);
+    font-size: clamp(25px, 6.5789vw, 75px);
     color: rgba(var(--cl-e),1.0);
   }
 
   &--mode{
-    font-size: clamp(40px, 5.5263vw, 63px);
+    font-size: clamp(19px, 5.5263vw, 63px);
     line-height: 100%;
     color: rgba(var(--cl-f),1.0);
   }
@@ -20,7 +24,7 @@
 
 .subtitle{
   font-family: var(--font-family);
-  font-size: clamp(36px, 4.386vw, 50.1px);
+  font-size: clamp(20px, 4.386vw, 50.1px);
   line-height: 1.2;
   font-weight: 700;
   color: rgba(var(--cl-i),1.0);

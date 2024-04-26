@@ -241,15 +241,15 @@ const resources = () => {
 
 const images = () => {
   return src([`${paths.srcImgFolder}/**/**.{jpg,jpeg,png,svg,gif,ico}`])
-    .pipe(gulpif(isProd, image([
-      image.mozjpeg({
-        quality: 80,
-        progressive: true
-      }),
-      image.optipng({
-        optimizationLevel: 2
-      }),
-    ])))
+    // .pipe(gulpif(isProd, image([
+    //   image.mozjpeg({
+    //     quality: 80,
+    //     progressive: true
+    //   }),
+    //   image.optipng({
+    //     optimizationLevel: 2
+    //   }),
+    // ])))
     .pipe(dest(paths.buildImgFolder))
 };
 

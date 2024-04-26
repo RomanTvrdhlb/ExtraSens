@@ -1,10 +1,18 @@
 <footer class="footer">
     <div class="footer__bg">
       <picture>
-        <img width='1920' height='412' src='./img/index/bg5.jpg' alt='image'>
+        <source type='image/webp' media='(max-width: 767px)' srcset='img/index/bgMob5.webp'>
+        <source media='(max-width: 767px)' srcset='img/index/bgMob5.png'>
+        <source type='image/webp' srcset='img/index/bg1.webp'>
+        <img width='1920' height='412' src='./img/index/bg1.png' alt='image'>
       </picture>
     </div>
   <div class="container">
+    <div class="footer__box">
+      <a href="tel:+0(000)0000000" class="phone-link">
+        <img width="30" height="30" src="./img/index/phone.png" alt="image">
+        +0 (000) 000-00-00</a>
+   
     <div class="main-btns">
       <button class="green-btn">
         <img width='46' height='46' src="./img/index/whatsapp.png" alt="image">
@@ -21,5 +29,6 @@
         <span></span>
       </button>
     </div>
+  </div>
   </div>
 </footer>

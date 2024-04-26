@@ -91,29 +91,6 @@ function modalInit(buttonsArray, buttonAttribute, activeClass) {
   buttonsArray.map(function (btn) {
     btn.addEventListener("click", (e) => {
       buttonClickHandler(e, buttonAttribute, activeClass);
-
-      if (btn.getAttribute("data-btn-modal") === "consultation") {
-        const parent = btn.closest('.villas-card.sales-card');
-        const textCard = parent.querySelector(".sales-card__title").textContent;
-        const currentModal = overlay.querySelector(
-          `[data-popup="consultation"]`
-        );
-        const form = currentModal.querySelector('.form-validation');
-        
-        
-        if(textCard){
-          const hiddenInput = document.createElement('input');
-          hiddenInput.type = 'hidden';
-          hiddenInput.name = 'offer';
-          hiddenInput.value = parent.querySelector('.sales-card__title').innerText.replace(/[\r\n]+/g, ' ');
-          form.appendChild(hiddenInput);
-        }
-
-        if (textCard && currentModal) {
-          currentModal.querySelector(".modal__title-name").textContent =
-            textCard;
-        }
-      }
     });
   });
 }

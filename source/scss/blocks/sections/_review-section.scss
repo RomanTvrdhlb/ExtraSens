@@ -1,10 +1,10 @@
 .review-section{
-    padding: 86px 0 84px;
+    padding: clamp(49px, 7.5439vw, 86px) 0 clamp(48px, 7.3684vw, 84px);
     z-index: 1;
     position: relative;
 
     &__box{
-        grid-gap: 61px;
+        grid-gap: clamp(27px, 5.3509vw, 61px);
         display: flex;
         flex-direction: column;
     }
@@ -24,7 +24,7 @@
 
       .title{
         color: rgba(var(--cl-a),1.0);
-        font-size: clamp(36px, 4.2105vw, 48px);
+        font-size: clamp(20px, 4.2105vw, 48px);
         line-height: 1.2;
       }
 }

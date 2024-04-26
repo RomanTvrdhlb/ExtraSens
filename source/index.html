@@ -10,6 +10,8 @@
       <section class="first-section">
         <div class="first-section__bg">
           <picture>
+            <source type='image/webp' media='(max-width: 650px)' srcset='img/index/bgMob1.webp'>
+            <source media='(max-width: 650px)' srcset='img/index/bgMob1.png'>
             <source type='image/webp' srcset='img/index/bg1.webp'>
             <img width='1548' height='822' src='img/index/bg1.png' alt='image'>
           </picture>
@@ -1002,7 +1004,7 @@
 
             <ul class="offers-list">
               <li class="offers-list__item">
-                <div class="offers-list__image">
+                <div class="offers-list__image offers-list__image--fortune">
                   <picture>
                     <source type='image/webp' srcset='img/index/offer1.webp'>
                     <img width='141' height='155' src='img/index/offer1.png' alt='image'>
@@ -1013,7 +1015,7 @@
                   ориентацию на выбор пути, анализ ситуаций и отношений.</p>
               </li>
               <li class="offers-list__item">
-                <div class="offers-list__image">
+                <div class="offers-list__image offers-list__image--damage">
                   <picture>
                     <source type='image/webp' srcset='img/index/offer2.webp'>
                     <img width='141' height='155' src='img/index/offer2.png' alt='image'>
@@ -1026,7 +1028,7 @@
                   иметь дело!</p>
               </li>
               <li class="offers-list__item">
-                <div class="offers-list__image">
+                <div class="offers-list__image offers-list__image--love">
                   <picture>
                     <source type='image/webp' srcset='img/index/offer3.webp'>
                     <img width='141' height='155' src='img/index/offer3.png' alt='image'>
@@ -1037,7 +1039,7 @@
                   привязку, а также поможем укрепить отношения!</p>
               </li>
               <li class="offers-list__item">
-                <div class="offers-list__image">
+                <div class="offers-list__image offers-list__image--crown">
                   <picture>
                     <source type='image/webp' srcset='img/index/offer4.webp'>
                     <img width='141' height='155' src='img/index/offer4.png' alt='image'>
@@ -1048,7 +1050,7 @@
                   затрудняет установку прочных отношений и вступление в брак.</p>
               </li>
               <li class="offers-list__item">
-                <div class="offers-list__image">
+                <div class="offers-list__image offers-list__image--money">
                   <picture>
                     <source type='image/webp' srcset='img/index/offer5.webp'>
                     <img width='141' height='155' src='img/index/offer5.png' alt='image'>
@@ -1059,7 +1061,7 @@
                   уровень доходов.</p>
               </li>
               <li class="offers-list__item">
-                <div class="offers-list__image">
+                <div class="offers-list__image offers-list__image--mode">
                   <picture>
                     <source type='image/webp' srcset='img/index/offer6.webp'>
                     <img width='141' height='155' src='img/index/offer6.png' alt='image'>
@@ -1226,7 +1228,7 @@
 
                 <label for="name" class="main-form__label">
                   <span class="main-form__subtitle">Ваше имя:</span>
-                  <input type="text" id="text" class="main-form__input input-name">
+                  <input type="text" id="name" class="main-form__input input-name">
                 </label>
                 <label for="phone" class="main-form__label">
                   <span class="main-form__subtitle">Ваш телефон:</span>

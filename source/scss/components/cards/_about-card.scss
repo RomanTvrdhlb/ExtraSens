@@ -1,8 +1,15 @@
 .about-card{
     display: flex;
     flex-direction: column;
-    grid-gap: 40px;
+   
+    @include for-mobile{
+        grid-gap: 40px;
 
+    }
+
+    @include mobile{
+        grid-gap: 30px;
+    }
 
 
 

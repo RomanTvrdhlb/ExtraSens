@@ -1,8 +1,12 @@
 .about-nav{
     display: flex;
     align-items: center;
-    grid-gap: 18px;
-
+    grid-gap: 35px 18px;
+  
+    @include laptop{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
     &__btn{
         display: flex;
@@ -11,18 +15,34 @@
         grid-gap: 28px;
         text-align: center;
         font-family:  var(--font-family);
-        font-size: clamp(16px, 1.5789vw, 18px);
+        font-size: 18px;
         line-height: 1.2;
         font-weight: 400;
         color:  rgba(var(--cl-f),1.0);
         transition: all .3s;
 
-        img{
+        @include for-mobile{
             width: 148px;
-            height: 148px;
+        }
+
+        @include mobile{
+            width: 151px;
+        }
+
+        img{
             border: solid 5px transparent;
             transition: all .3s;
             pointer-events: none;
+
+            @include for-mobile{
+                width: 148px;
+                height: 148px;
+            }
+
+            @include mobile{
+                width: 151px;
+                height: 151px;
+            }
         }
 
         &.active{

@@ -31,5 +31,10 @@
         line-height: 130%;
         font-weight: 700;
         color: rgba(var(--cl-a),1.0);
+        transition: all .3s;
+
+        &:hover{
+          color: rgba(var(--cl-g),1.0);
+        }
     }
 }
