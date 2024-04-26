@@ -1,6 +1,7 @@
 .first-section {
   position: relative;
   z-index: 5;
+  padding: 456px 0 82px;
 
   &__bg {
     position: absolute;
@@ -13,80 +14,46 @@
       width: 100%;
       height: 100%;
       object-position: top center;
-      overflow: hidden;
     }
   }
 
   &__box {
     position: relative;
-    color: rgba(var(--cl-a), 1);
     display: flex;
     flex-direction: column;
-    grid-gap: clamp(16px, 1.8222vw, 25px);
-
-    @include for-mobile{
-      padding: clamp(117px, 18.2216vw, 250px) 0 228px;
-    }
-
-    @include mobile{
-      padding: clamp(117px, 18.2216vw, 250px) 0 234px;
-    }
-
-    .text{
-      font-size: clamp(20px, 1.8222vw, 25px);
-
-      @include mobile{
-        font-weight: 400;
-      }
-    }
+    align-items: center;
+    grid-gap: clamp(32px, 5.614vw, 64px);
+    
   }
 
   &__title {
-    max-width: clamp(432px, 60.9329vw, 836px);
+    font-family: var(--font-family);
+    font-size: clamp(40px, 5.5263vw, 63px);
+    line-height: 100%;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: rgba(var(--cl-c),1.0);
+    text-align: center;
+
+
+    span{
+      font-size: clamp(24px, 2.807vw, 32px);
+      line-height: 200%;
+    }
   }
 
   &__text {
-    display: block;
-    max-width: clamp(395px, 55.8309vw, 766px);
-    margin-bottom: clamp(14px, 1.8222vw, 25px);
+    font-family: Georgia;
+    font-size: clamp(18px, 2.193vw, 25px);
+    line-height: 95%;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: rgba(var(--cl-c),1.0);
+    margin-bottom: 24px;
+    text-align: center;
   }
 
-  &__btn {
-    @include for-mobile{
-      padding: 0 50px;
-    }
-
-    @include mobile{
-      width: 100%;
-      padding: 0 10px;
-    }
-  }
+  
 
 
-  &--villas{
-    margin-bottom: clamp(90px, 9.4752vw, 130px);
-
-    .first-section{
-
-      &__bg{
-        img,picture{
-          object-position: bottom;
-        }
-      }
-
-      &__box{
-        padding: clamp(148px, 16.1808vw, 222px) 0 101px;
-
-        @include mobile{
-          padding-bottom: 287px;
-        }
-      }
-
-      &__title{
-        color: rgba(var(--cl-a),1.0);
-        max-width: clamp(359px, 46.3557vw, 636px);
-        line-height: 123%;
-      }
-    }
-  }
 }

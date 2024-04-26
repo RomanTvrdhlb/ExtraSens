@@ -1,0 +1,35 @@
+.main-nav{
+    width: fit-content;
+    ul{
+        display: flex;
+        align-items: center;
+    }
+
+    li{
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        &:not(:first-child){
+            &::before{
+                margin: 0 9px;
+                position: static;
+                content: '-';
+                font-family: var(--font-family2);
+                font-size: clamp(16px, 1.6667vw, 19px);
+                line-height: 130%;
+                font-weight: 700;
+                color: rgba(var(--cl-a),1.0);
+            }
+        }
+    }
+
+    a{
+        white-space: nowrap;
+        font-family: var(--font-family2);
+        font-size: clamp(16px, 1.6667vw, 19px);
+        line-height: 130%;
+        font-weight: 700;
+        color: rgba(var(--cl-a),1.0);
+    }
+}

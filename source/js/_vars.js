@@ -9,11 +9,13 @@ export default {
   burger: document.querySelectorAll('.burger'),
   mobileMenu: document.querySelector('.mobile-menu'),
   overlay: document.querySelector('[data-overlay]'),
-  timers: document.querySelectorAll('.timer'),
   modals: [...document.querySelectorAll('[data-popup]')],
   modalsButton: [...document.querySelectorAll('[data-btn-modal]')],
   innerButtonModal: [...document.querySelectorAll('[data-btn-inner]')],
-  parentSliders: document.querySelectorAll(".sales-card__wrapp"),
+
+
+
+  mainSliders: document.querySelectorAll(".main-slider"),
 }
 
 

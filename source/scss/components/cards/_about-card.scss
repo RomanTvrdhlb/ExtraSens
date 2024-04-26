@@ -1,0 +1,26 @@
+.about-card{
+    display: flex;
+    flex-direction: column;
+    grid-gap: 40px;
+
+
+
+
+    &__name{
+        font-size: clamp(18px, 2.193vw, 25px);
+        font-style: italic; 
+        font-family: var(--font-family);
+        line-height: 145%;
+        font-weight: 400;
+        color: rgba(var(--cl-j),1.0);
+    }
+
+    p{
+        font-family: var(--font-family3);
+        font-size: clamp(15px, 1.4912vw, 17px);
+        line-height: 145%;
+        font-weight: 400;
+        color: rgba(var(--cl-j),1.0);
+  
+    }
+}

@@ -1,0 +1,9 @@
+.about-section{
+    padding: 86px 0 163px;
+
+    &__box{
+        display: flex;
+        flex-direction: column;
+        grid-gap: clamp(40px, 6.0526vw, 69px);
+    }
+}

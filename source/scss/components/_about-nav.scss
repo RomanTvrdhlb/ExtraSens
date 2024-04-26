@@ -1,0 +1,42 @@
+.about-nav{
+    display: flex;
+    align-items: center;
+    grid-gap: 18px;
+
+
+    &__btn{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-gap: 28px;
+        text-align: center;
+        font-family:  var(--font-family);
+        font-size: clamp(16px, 1.5789vw, 18px);
+        line-height: 1.2;
+        font-weight: 400;
+        color:  rgba(var(--cl-f),1.0);
+        transition: all .3s;
+
+        img{
+            width: 148px;
+            height: 148px;
+            border: solid 5px transparent;
+            transition: all .3s;
+            pointer-events: none;
+        }
+
+        &.active{
+            color: rgba(var(--cl-g),1.0);
+
+            img{
+                border-color: var(--br-b);
+            }
+        }
+
+        &:hover{
+            img{
+                transform: scale(1.05);
+            }
+        }
+    }
+}

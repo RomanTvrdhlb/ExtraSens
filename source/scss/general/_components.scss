@@ -1,7 +1,9 @@
 // ----------------- MAIN COMPONENTS -----------------
 @import "../components/main-components/main-btns.scss";
 @import "../components/main-components/main-form.scss";
-// @import "../components/cards/offer-card.scss";
+@import "../components/main-components/main-slider.scss";
+@import "../components/main-components/main-nav.scss";
+@import "../components/cards/about-card.scss";
 
 
 // ----------------- BLOCK COMPONENTS -----------------
@@ -9,6 +11,9 @@
 
 // ----------------------------------------------------
 @import "../components/offers-list.scss";
+@import "../components/about-nav.scss";
+@import "../components/about-tab.scss";
+@import "../components/about-content.scss";
 
 
 

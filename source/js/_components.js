@@ -6,6 +6,7 @@ import './components/select';
 import './components/fancybox';
 import './components/quiz';
 import './components/validate';
+import './components/tabs';
 
 
 
