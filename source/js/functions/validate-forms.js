@@ -22,6 +22,28 @@ export const validateForms = (selector, rules, afterSend) => {
   }
 
   validation.onSuccess((ev) => {
-    afterSend()
+    addCustomClass(form, 'loader');
+    let formData = new FormData(ev.target);
+   
+    let xhr = new XMLHttpRequest();
+
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState === 4) {
+        if (xhr.status === 200) {
+          if (afterSend) {
+            afterSend();
+            setTimeout(function(){
+              addCustomClass(form, 'loaded');
+            },1000);
+          }
+          console.log('status 200');
+        }
+      }
+    }
+    
+    xhr.open('POST', 'mail.php', true);
+    xhr.send(formData);
+
+    ev.target.reset();
   })
 };

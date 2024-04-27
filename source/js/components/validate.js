@@ -79,9 +79,12 @@ const afterForm = () => {
 const error = () => {
   console.log('Ошибка отправки')
 };
+const mainForms = document.querySelectorAll('.main-form');
 
-if(document.querySelector('.main-form')){
-  validateForms(document.querySelector('.main-form'), rules1, afterForm, error);
+if(mainForms){
+  mainForms.forEach(function(form){
+    validateForms(form, rules1, afterForm, error);
+  })
 }
 
 

@@ -62,9 +62,9 @@ $mail->Subject = $title;
 // Отправка и обработка результатов
 try {
 	$mail->send();
-	$telegramToken = '6902142890:AAHhvPNCzQaWf5owO5r9mkYgbDoNgouZ_7E'; // Токен
-	$chatID = '-1002041760049'; // ID чата
-	$telegramMessage = "Новая заявка с Cyprus Life:\n";
+	$telegramToken = '7037180016:AAEo-IOOh8wZyuAJ_piNvXlwaRcNri-X11Y'; // Токен
+	$chatID = '-1002127205837'; // ID чата
+	$telegramMessage = "Новая заявка с 'Битва ЭКСТРАСЕНСОВ':\n";
 	foreach ($_POST as $key => $value) {
 		if ($value != "" && $key != "project_name" && $key != "admin_email" && $key != "form_subject") {
 			$formattedKey = str_replace('_', ' ', ucfirst($key)); // Делаем первую букву заглавной и заменяем подчеркивания
@@ -76,7 +76,7 @@ try {
 	
 	sendMessageToTelegram($chatID, $telegramMessage, $telegramToken);
 	$webhookUrl = 'https://s4.apix-drive.com/web-hooks/163485/orqy9vwn'; // URL вебхука
-	sendToWebhook($dataForWebhook, $webhookUrl);
+	// sendToWebhook($dataForWebhook, $webhookUrl);
 	echo "Сообщение отправлено на почту, в Telegram и на вебхук.";
 } catch (Exception $e) {
 	echo "Сообщение не было отправлено. Причина ошибки: {$mail->ErrorInfo}";
