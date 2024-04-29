@@ -1,4 +1,6 @@
 .about-content {
+  margin-top: clamp(49px, 7.982vw, 91px);
+
   &__text {
     display: flex;
     flex-direction: column;

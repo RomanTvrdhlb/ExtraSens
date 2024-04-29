@@ -2,17 +2,40 @@
     display: flex;
     align-items: center;
     grid-gap: 35px 18px;
+    background-color: rgba(var(--bg-i),1.0);
+    z-index: 5;
+    padding: 15px 0 5px;
   
     @include laptop{
-        flex-wrap: wrap;
-        justify-content: center;
+        overflow-x: auto;
+        width: calc(100% + (var(--container-offset) * 2));
+        margin-left: calc(var(--container-offset) * -1);
+        padding: 15px var(--container-offset) 5px;
+    }
+
+    &::-webkit-scrollbar{
+        display: none;
+    }
+
+    @include for-mobile{
+        position: sticky;
+        top: calc(var(--header-height));
+
+        &::before{
+            position: absolute;
+            content: '';
+            background-color: rgba(var(--bg-i),1.0);
+            inset: 0;
+            z-index: -1;
+            pointer-events: none;
+        }
     }
 
     &__btn{
         display: flex;
         flex-direction: column;
         align-items: center;
-        grid-gap: 28px;
+        grid-gap: clamp(15px, 2.3932vw, 28px);
         text-align: center;
         font-family:  var(--font-family);
         font-size: 18px;
@@ -20,10 +43,8 @@
         font-weight: 400;
         color:  rgba(var(--cl-f),1.0);
         transition: all .3s;
-
-        @include for-mobile{
-            width: 148px;
-        }
+            width: clamp(115px, 12.6496vw, 148px);
+    
 
         @include mobile{
             width: 151px;
@@ -33,11 +54,11 @@
             border: solid 5px transparent;
             transition: all .3s;
             pointer-events: none;
-
-            @include for-mobile{
-                width: 148px;
-                height: 148px;
-            }
+           
+         
+                width: clamp(115px, 12.6496vw, 148px);
+                height: clamp(115px, 12.6496vw, 148px);
+         
 
             @include mobile{
                 width: 151px;

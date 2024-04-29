@@ -15,6 +15,15 @@
   z-index: 2;
   overflow: hidden;
 
+  @include mobile{
+    padding-top: 5px;
+
+    img{
+      position: relative;
+      top: -3px;
+    }
+  }
+
   &::before{
     transition: all .3s;
     transform: translateY(100%);
@@ -50,6 +59,15 @@
   z-index: 2;
   overflow: hidden;
 
+  @include mobile{
+    padding-top: 5px;
+
+    img{
+      position: relative;
+      top: -3px;
+    }
+  }
+
   &::before{
     transition: all .3s;
     transform: translateY(100%);
@@ -83,6 +101,15 @@
   position: relative;
   z-index: 2;
   overflow: hidden;
+
+  @include mobile{
+    padding-top: 5px;
+
+    img{
+      position: relative;
+      top: -3px;
+    }
+  }
 
   &::before{
     transition: all .3s;
@@ -131,6 +158,15 @@
   &:hover{
     &::before{
       transform: translateY(0);
+    }
+  }
+
+  @include mobile{
+    padding-top: 5px;
+
+    img{
+      position: relative;
+      top: -3px;
     }
   }
 }
